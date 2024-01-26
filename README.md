@@ -3,6 +3,6 @@
 ![EITL-Net](./EITLNet.png)
 
 
-Source code of the paper: Zijie Lou, Gang Cao, Man Lin. Black-Box Attack against GAN-Generated Image Detector with Contrastive Perturbation. Engineering Applications of Artificial Intelligence, vol. 124, 106594, 2023. 
+Source code of the paper: Guo, Kun, Haochen Zhu, and Gang Cao. "Effective Image Tampering Localization via Enhanced Transformer and Co-attention Fusion." In ICASSP, 2024.
 
 Please refer to the detailed code from https://github.com/guokun111/EITLNet.
