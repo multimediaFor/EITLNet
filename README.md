@@ -34,7 +34,9 @@ The training dataset catalog is as follows.
             00003_gt.png
 ```
 
-
+### Trained Models
+Please download the models and place them in the [weights](weights) directory:
++ [weight](https://www.123pan.com/s/2pf9-0tPHv.html) (password：EITL)
 
 ### Training
 ```python
