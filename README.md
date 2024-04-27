@@ -4,7 +4,7 @@
 
 ### Update
 
-- 21.04.26, We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ)  (password：EITL) , the file `nets/EITLnet.py` , and the main results of the paper ( the average performance is more higher than the paper [EITLNet](https://ieeexplore.ieee.org/abstract/document/10446332) ). The corrected experimental results are marked in <font color=Red>red</font> in the table below.
+- 21.04.26, We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)  (password：EITL) , the file `nets/EITLnet.py` , and the main results of the paper ( the average performance is more higher than the paper [EITLNet](https://ieeexplore.ieee.org/abstract/document/10446332) ). The corrected experimental results are marked in <font color=Red>red</font> in the table below.
 
 <img src="./corrected.png" alt="corrected" style="zoom:100%;" />
 
@@ -39,7 +39,7 @@ The training dataset catalog is as follows. The mask image in the folder has onl
 ```
 
 ### Trained Models
-Please download the weight from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ)(password:EITL) and place it in the `weights/` directory.
+Please download the weight from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)(password:EITL) and place it in the `weights/` directory.
 
 ### Training
 ```python
