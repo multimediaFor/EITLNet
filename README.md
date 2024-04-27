@@ -6,7 +6,7 @@
 
 - 21.04.26, We updated the model [weights](https://www.123pan.com/s/PcP3Td-KGQod.html) (password：EITL) , the file```nets/EITLnet.py```, and the main results of the paper ( the average performance is more higher than  the paper [EITLNet](https://ieeexplore.ieee.org/abstract/document/10446332) ). The corrected experimental results are marked in <font color=Red>red</font> in the table below.
 
-<img src="./corrected.png" alt="corrected" style="zoom:67%;" />
+<img src="./corrected.png" alt="corrected" style="zoom:60%;" />
 
 ### Environment
 
@@ -39,8 +39,8 @@ The training dataset catalog is as follows. The mask image in the folder has onl
 ```
 
 ### Trained Models
-Please download the models and place them in the [weights](weights) directory:
-+ [weights](https://www.123pan.com/s/2pf9-0tPHv.html) (password：EITL)
+Please download the models and place them in the [./weights](weights) directory:
++ [weights](https://www.123pan.com/s/PcP3Td-KGQod.html) (password：EITL)
 
 ### Training
 ```python
