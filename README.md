@@ -4,7 +4,7 @@
 
 ### Update
 
-- 21.04.26, We updated the weights which download from [Google Drive Link](https://drive.google.com/file/d/1dCUIOixReCpQUlFwJFQNvnk8X8U_CV9B/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ)  (extract code：EITL) , the file nets/EITLnet.py , and the main results of the paper ( the average performance is more higher than  the paper [EITLNet](https://ieeexplore.ieee.org/abstract/document/10446332) ). The corrected experimental results are marked in <font color=Red>red</font> in the table below.
+- 21.04.26, We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/file/d/1dCUIOixReCpQUlFwJFQNvnk8X8U_CV9B/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ)  (extract code：EITL) , the file "nets/EITLnet.py" , and the main results of the paper ( the average performance is more higher than the paper [EITLNet](https://ieeexplore.ieee.org/abstract/document/10446332) ). The corrected experimental results are marked in <font color=Red>red</font> in the table below.
 
 <img src="./corrected.png" alt="corrected" style="zoom:100%;" />
 
@@ -19,7 +19,7 @@
 
 ### Training datasets
 
-The training dataset catalog is as follows. The mask image in the folder has only two values of 0 and 1.(```to01.py```)
+The training dataset catalog is as follows. The mask image in the folder has only two values of 0 and 1.
 
 ```
 ├─train_dataset
@@ -39,7 +39,7 @@ The training dataset catalog is as follows. The mask image in the folder has onl
 ```
 
 ### Trained Models
-Please download the weight from [Google Drive Link](https://drive.google.com/file/d/1dCUIOixReCpQUlFwJFQNvnk8X8U_CV9B/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ)  and place them in the [./weights](weights) directory.
+Please download the weight from [Google Drive Link](https://drive.google.com/file/d/1dCUIOixReCpQUlFwJFQNvnk8X8U_CV9B/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1AI2KQJmBdEeGtPGZGyNkWQ) and place it in the [./weights](weights) directory.
 
 ### Training
 ```python
