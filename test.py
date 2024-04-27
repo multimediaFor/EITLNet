@@ -113,13 +113,13 @@ def evaluate(path_pre,path_gt,dataset_name,record_txt):
     return np.mean(auc), np.mean(f1), np.mean(iou)
 
 if __name__ == "__main__":
-    used_weigth=r"./weights/weights_EITL.pth"
+    used_weigth=r"./weights/weights_EITL_new.pth"
     segformer = SegFormer_Segmentation("b2",used_weigth)
     record_txt = r"./test_out/evaluate_result.txt"
     with open(record_txt,"a") as f:
         f.writelines(str(used_weigth))
         f.writelines("\n")
-    #test_samples
+    # #test_samples
     # test_path = r'./samples/tamper/'
     # save_path = r"./test_out/samples_predict/"
     # path_gt = r'./samples/gt/'
@@ -137,58 +137,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-    # #DSO
-    # dir_origin_path = r'H:\Standard_Database\a-ImageForgeriesOSN_Dataset\DSO'+Robust_dataset
-    # dir_save_path = r"test_out/DSO/Debug_no_resize/"#保存的预测结果图
-    # path_pre = dir_save_path
-    # path_gt = r'H:temp/DSO_GT/'
-    # test_mode(dir_origin_path,dir_save_path)#要自己手动去选择注释代码来选择测试方式
-    # auc,f1,iou=evaluate(path_pre,path_gt,"DSO",record_txt)
-
-    # #Columbia
-    # dir_origin_path = r'H:/Standard_Database/a-ImageForgeriesOSN_Dataset/Columbia'+Robust_dataset
-    # dir_save_path = r"test_out/Columbia/Debug_no_resize/"
-    # path_pre=  dir_save_path
-    # path_gt = r'H:\Standard_Database\a-ImageForgeriesOSN_Dataset\Columbia_GT/'
-    # test_mode(dir_origin_path, dir_save_path)  # 要自己手动去选择注释代码来选择测试方式
-    # auc, f1, iou = evaluate(path_pre, path_gt, "Columbia", record_txt)
-    #
-    #  #CASIA
-    # dir_origin_path = r'H:\Standard_Database\a-ImageForgeriesOSN_Dataset\CASIA'+Robust_dataset#待滑块测试的数据集
-    # dir_save_path = r"E:\Experiments\test_out\temp_save\CASIA1\Debug_no_resize/"#滑块后的图片保存在的路径
-    # path_pre=dir_save_path
-    # path_gt = r"H:\Standard_Database\a-ImageForgeriesOSN_Dataset\CASIA_GT/"#原图大小对应的groundTruth
-    # test_mode(dir_origin_path, dir_save_path)  # 要自己手动去选择注释代码来选择测试方式
-    # auc, f1, iou = evaluate(path_pre, path_gt, "CASIA", record_txt)
-    # #
-    #
-    # # Coverage
-    # dir_origin_path = r'H:\temp\COVERAGE_fixed\Coverage/'
-    # dir_save_path = r"test_out/Coverage/Debug_no_resize/"
-    # path_pre= dir_save_path
-    # path_gt = r"H:\temp\COVERAGE_fixed\Coverage_gt/"
-    # test_mode(dir_origin_path, dir_save_path)  # 要自己手动去选择注释代码来选择测试方式
-    # auc, f1, iou = evaluate(path_pre, path_gt, "Coverage", record_txt)
-    #
-    #
-    # #
-    # # NIST16
-    # dir_origin_path = r'H:\Standard_Database\a-ImageForgeriesOSN_Dataset\NIST16'+Robust_dataset
-    # dir_save_path = r"test_out/NIST16/Debug_no_resize/"
-    # path_pre = dir_save_path
-    # path_gt = r"H:\temp\NIST16_GT/"
-    # test_mode(dir_origin_path, dir_save_path)  # 要自己手动去选择注释代码来选择测试方式
-    # auc, f1, iou = evaluate(path_pre, path_gt, "NIST16", record_txt)
-    #
-    #
-    # # IMD20
-    # dir_origin_path = r'H:\temp\IMD20_fixed\tamper_all/'
-    # dir_save_path = r"test_out/IMD20/Debug_no_resize/"
-    # path_pre = dir_save_path
-    # path_gt = r"H:\temp\IMD20_fixed\gt_all/"
-    # test_mode(dir_origin_path, dir_save_path)  # 要自己手动去选择注释代码来选择测试方式
-    # auc, f1, iou = evaluate(path_pre, path_gt, "IMD20", record_txt)
-    #
