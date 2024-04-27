@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from matplotlib import pyplot as plt
 import math
 import torch.nn.functional as F
 
@@ -23,7 +24,7 @@ class h_swish(nn.Module):
 
 
 class CoordAtt(nn.Module):
-    def __init__(self, inp, oup,nclass,reduction=32):
+    def __init__(self, inp, oup,reduction=32):
         super(CoordAtt, self).__init__()
         self.pool_h = nn.AdaptiveAvgPool2d((None, 1))
         self.pool_w = nn.AdaptiveAvgPool2d((1, None))
@@ -37,10 +38,6 @@ class CoordAtt(nn.Module):
         self.conv_h = nn.Conv2d(mip, oup*2, kernel_size=1, stride=1, padding=0)
         self.conv_w = nn.Conv2d(mip, oup*2, kernel_size=1, stride=1, padding=0)
 
-        self.out = nn.Sequential(
-            nn.Dropout(0.1),
-            nn.Conv2d(oup*2, nclass, 1)
-        )
 
     def forward(self, x):
         identity = x
@@ -62,9 +59,4 @@ class CoordAtt(nn.Module):
 
         out = identity * a_w * a_h
 
-        #更改
-        outputs = []
-        fusion_out = self.out(out)
-        outputs.append(fusion_out)
-
-        return outputs
+        return out
