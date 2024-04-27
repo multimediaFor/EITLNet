@@ -119,13 +119,15 @@ if __name__ == "__main__":
     with open(record_txt,"a") as f:
         f.writelines(str(used_weigth))
         f.writelines("\n")
-    # #test_samples
-    # test_path = r'./samples/tamper/'
-    # save_path = r"./test_out/samples_predict/"
-    # path_gt = r'./samples/gt/'
-    test_path = r'F:\Datasets\DSO\tamper/'
-    save_path = r'D:\Datasets\EITLNet\DSO\Debug_no_resize/'
-    path_gt = r'F:\Datasets\DSO\gt/'
+    #test_samples
+    test_path = r'./samples/tamper/'
+    save_path = r"./test_out/samples_predict/"
+    path_gt = r'./samples/gt/'
+    
+    # test_path = r'F:\Datasets\DSO\tamper/'
+    # save_path = r'D:\Datasets\EITLNet\DSO\Debug_no_resize/'
+    # path_gt = r'F:\Datasets\DSO\gt/'
+    
     test_mode(test_path,save_path)
     auc,f1,iou=evaluate(save_path,path_gt,"samples",record_txt)
 
