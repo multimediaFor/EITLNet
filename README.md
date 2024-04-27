@@ -19,7 +19,7 @@
 
 ### Training datasets
 
-The training dataset catalog is as follows. The mask image in the folder has only two values of 0 and 1.
+The training dataset catalog is as follows. The mask image in the folder has only two values of 0 and 1.(```to01.py```)
 
 ```
 ├─train_dataset
@@ -28,7 +28,7 @@ The training dataset catalog is as follows. The mask image in the folder has onl
     │          train.txt
     │          val.txt
     ├─JPEGImages
-    │      00001.jp.
+    │      00001.jpg
     │      00002.jpg
     │      00003.jpg     
     │      ...
