@@ -32,17 +32,17 @@ def detect_image_stride(test_path, dir_save_path):
             save_name = img_name[:-4] + '.png'
             if not os.path.exists(dir_pre_path):
                 os.makedirs(dir_pre_path)
-            seg_pred.save(os.path.join(dir_pre_path, save_name))#滑块预测的概率图
+            seg_pred.save(os.path.join(dir_pre_path, save_name))#Slider prediction probability plots
     print('Prediction complete.')
     if os.path.exists('test_out/temp/input_decompose_' + test_size + '/'):
         shutil.rmtree('test_out/temp/input_decompose_' + test_size + '/')
-    merge(test_path, dir_pre_path, dir_save_path, test_size)#merge把预测的滑块图合并起来
+    merge(test_path, dir_pre_path, dir_save_path, test_size)#merge the predicted slider plots
     print('Merging complete.')
     return
 
 
 def metric(premask, groundtruth):
-    seg_inv, gt_inv = np.logical_not(premask), np.logical_not(groundtruth)#布尔值取反
+    seg_inv, gt_inv = np.logical_not(premask), np.logical_not(groundtruth)
     true_pos = float(np.logical_and(premask, groundtruth).sum())  # float for division
     true_neg = np.logical_and(seg_inv, gt_inv).sum()
     false_pos = np.logical_and(premask, gt_inv).sum()
@@ -61,7 +61,7 @@ def test_mode(dir_origin_path,dir_save_path):
     #             ('.bmp', '.dib', '.png', '.jpg', '.jpeg', '.pbm', '.pgm', '.ppm', '.tif', '.tiff')):
     #         image_path = os.path.join(dir_origin_path, img_name)
     #         image = Image.open(image_path)
-    #         # # 无resize
+    #         # # no resize
     #         # _, seg_pred= segformer.detect_image_noresize(image)
     #         # # print('No Resize Test')
     #         # save_name = img_name[:-4] + '.png'
@@ -69,14 +69,14 @@ def test_mode(dir_origin_path,dir_save_path):
     #         #     os.makedirs(dir_save_path)
     #         # seg_pred.save(os.path.join(dir_save_path, save_name))
     #
-    #         # 等ratio做resize
+    #         # resize
     #         _, seg_pred = segformer.detect_image_resize(image)
     #         # print('Resize Test!!')
     #         save_name = img_name[:-4] + '.png'
     #         if not os.path.exists(dir_save_path):
     #             os.makedirs(dir_save_path)
     #         seg_pred.save(os.path.join(dir_save_path, save_name))
-    ## 滑动窗口测试
+    ## Sliding window test
     detect_image_stride(dir_origin_path, dir_save_path)
     print("test_over!")
     return
