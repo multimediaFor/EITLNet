@@ -12,7 +12,7 @@ if not os.path.exists(dir_path):
 dirlist=os.listdir(org_path)
 for img_id in tqdm(dirlist):
     img_path=os.path.join(org_path,img_id)
-    img=Image.open(img_path)
+    img=Image.open(img_path).convert('L')
     img=np.array(img)
     img_cls=np.array(img)
     img_cls[img>=127]=1
