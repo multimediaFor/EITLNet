@@ -3,8 +3,8 @@
 ![EITLNet](./EITLNet.png)
 
 ### Update
-
-- 21.04.26. We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)  (password：EITL) and the file `nets/EITLnet.py`. The latest corrected experimental results are marked in <font color=Red>red</font> in the table below, which the average performance is more higher than before([paper](https://ieeexplore.ieee.org/abstract/document/10446332) ).
+- 24.05.18. We upload the training dataset.
+- 24.04.26. We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)  (password：EITL) and the file `nets/EITLnet.py`. The latest corrected experimental results are marked in <font color=Red>red</font> in the table below, which the average performance is more higher than before([paper](https://ieeexplore.ieee.org/abstract/document/10446332) ).
 
 <img src="./corrected.png" alt="corrected" style="zoom:100%;" />
 
@@ -37,7 +37,9 @@ The training dataset catalog is as follows. The mask image in the folder has onl
             00002_gt.png
             00003_gt.png
 ```
-
+### Training Dataset
+Please download the training dataset from [Kaggle Link](https://www.kaggle.com/datasets/sphiaguo/eitlnet-train-datasets) or [Baiduyun Link](https://pan.baidu.com/s/15exiPJ7eux1HnK4DNIJYSg)(password:EITL).
+The Segmentation0255 folder contains ground truth values of only 0 and 255, while the Segmentation01 folder contains values of only 0 and 1. In this paper, the latter folder was used for training. The Segmentation01 folder was generated from the former using the `to01.py` script.
 ### Trained Models
 Please download the weight from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)(password:EITL) and place it in the `weights/` directory.
 
