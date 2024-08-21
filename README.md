@@ -6,7 +6,7 @@ An official implementation code for paper "[Effective Image Tampering Localizati
 
 ### Update
 - 24.05.18. We upload the training dataset.
-- 24.04.26. We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)  (password：EITL) and the file `nets/EITLnet.py`. The latest corrected experimental results are marked in <font color=Red>red</font> in the table below, which the average performance is more higher than before([paper](https://ieeexplore.ieee.org/abstract/document/10446332)).
+- 24.04.26. We updated the weight which can be downloaded from [Google Drive Link](https://drive.google.com/file/d/1fr0PLfTs0l4aPERFUizAdXKPW1cOg05H/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)  (password：EITL) and the file `nets/EITLnet.py`. The latest corrected experimental results are marked in <font color=Red>red</font> in the table below, which the average performance is more higher than before([paper](https://ieeexplore.ieee.org/abstract/document/10446332)).
 
 <img src="./corrected.png" alt="corrected" style="zoom:100%;" />
 
