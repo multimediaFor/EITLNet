@@ -43,7 +43,7 @@ Please download the training dataset from [Kaggle Link](https://www.kaggle.com/d
 The SegmentationClass0255 folder contains ground truth values of only 0 and 255, while the SegmentationClass01 folder contains values of only 0 and 1. In this paper, the latter folder was used for training. The SegmentationClass01 folder was generated from the former using the `to01.py` script.
 
 ### Trained Models
-Please download the weight from [Google Drive Link](https://drive.google.com/drive/my-drive?hl=zh-cn) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)(password:EITL) and place it in the `weights/` directory.
+Please download the weight from [Google Drive Link](https://drive.google.com/file/d/1fr0PLfTs0l4aPERFUizAdXKPW1cOg05H/view?usp=drive_link) or [Baiduyun Link](https://pan.baidu.com/s/1ltB8YJO2szg6aXI-IpSOqg)(password:EITL) and place it in the `weights/` directory.
 
 ### Training
 ```python
