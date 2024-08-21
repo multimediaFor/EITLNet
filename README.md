@@ -67,4 +67,4 @@ python test.py
  ```
 ### Contact
 
-If you have any questions, please contact me(guokun21@qq.com).
+If you have any questions, please ask in the [issue](https://github.com/multimediaFor/EITLNet/issues).
