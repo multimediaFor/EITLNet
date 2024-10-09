@@ -225,7 +225,7 @@ def fit_one_epoch(model_train, model, loss_history, eval_callback, optimizer, ep
         # print('Total Loss: %.3f || Val Loss: %.3f ' % (total_loss / epoch_step, val_loss / epoch_step_val))
         state={
             "epoch":epoch,
-            'state_dict':model.state_dict(),#???为什么不保存model_train
+            'state_dict':model.state_dict(),
             'optimizer':optimizer.state_dict(),
         }
         # 保存权值
