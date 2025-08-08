@@ -1,5 +1,5 @@
 ## EFFECTIVE IMAGE TAMPERING LOCALIZATION VIA ENHANCED TRANSFORMER AND CO-ATTENTION FUSION 
-An official implementation code for paper "[Effective Image Tampering Localization via Enhanced Transformer and Co-attention Fusion](https://arxiv.org/pdf/2309.09306)". This repo provide codes, pretrained/trained weights, and our training datasets.
+An official implementation code for paper "[Effective Image Tampering Localization via Enhanced Transformer and Co-attention Fusion](https://arxiv.org/pdf/2309.09306)". This repo provides code, pretrained/trained weights, and our training datasets.
 
 ### Network Architecture
 ![EITLNet](./EITLNet.png)
@@ -68,3 +68,4 @@ python test.py
 ### Contact
 
 If you have any questions, please ask in the [issue](https://github.com/multimediaFor/EITLNet/issues).
+
